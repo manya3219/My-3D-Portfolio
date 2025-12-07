@@ -1,0 +1,241 @@
+Prompt Title:
+“Create a 3D Next.js Software Engineer Portfolio for Manya Yadav”
+
+FULL PROMPT
+
+Create a modern, 3D-themed portfolio website using Next.js, React, Tailwind CSS, and Framer Motion for Software Engineer & Full-Stack Developer — Manya Yadav.
+
+Use the following requirements:
+
+1. WEBSITE GOAL
+
+Build a high-performance, seamless 3D animation portfolio that highlights my skills as a Frontend / Full-Stack Developer with an immersive UI/UX based on Next.js + Tailwind CSS + Three.js/Spline/React-Three-Fiber.
+
+Style:
+
+Futuristic
+
+Smooth 3D animations
+
+Soft glowing neon UI
+
+Smooth page transitions
+
+Minimalistic, clean, developer-friendly aesthetic
+
+2. INTRO SECTION (Hero)
+
+Name: Manya Yadav
+Role: Software Engineer — Frontend & Full-Stack Developer
+Tech Focus: React.js, Next.js, Node.js, Tailwind, MongoDB, SQL, JS, C++
+
+3D Visual: A rotating 3D laptop or hologram UI panel displaying code.
+
+Include:
+
+Floating 3D elements
+
+“Hire Me” & “Download Resume” buttons
+
+Smooth typewriter effect tagline:
+
+Building fast, scalable, and immersive digital experiences.
+
+3. ABOUT ME SECTION
+
+Craft a clean, professional bio:
+
+I am a passionate Software Engineer specializing in modern frontend engineering, full-stack development, and scalable web applications. I love building intuitive user interfaces, real-time applications, and AI-powered tools. I enjoy solving complex problems, exploring new technologies, and creating seamless digital experiences.
+
+Add 3D animation:
+
+A 3D cube showcasing my skills (rotates on hover)
+
+4. SKILLS SECTION
+
+Use animated skill cards.
+
+Programming Languages
+
+C++
+
+JavaScript
+
+Frameworks & Libraries
+
+React.js
+
+Next.js
+
+Node.js
+
+Express.js
+
+Tailwind CSS
+
+Databases
+
+MongoDB
+
+SQL
+
+Tools
+
+Git
+
+GitHub
+
+Postman
+
+VS Code
+
+Add glowing hover animations and micro-interactions.
+
+5. PROJECTS SECTION (6 PROJECTS)
+
+Create a 3D grid layout with floating project cards.
+
+(1) NexaHub — Ed-Tech Platform
+
+Collaborative learning platform
+
+Admin dashboard with moderation, role-based access
+
+Tech: React, Tailwind, Node.js, MongoDB
+
+Source: https://github.com/manya3219/MyDev_FIleSharing
+
+(2) Gemini AI Clone
+
+Integrated Google Gemini API
+
+Streaming chat responses
+
+Real-time multimodal interface
+
+Tech: React.js
+
+Source: https://github.com/manya3219/Gemini-clone
+
+(3) Live Chat Application
+
+Real-time messaging with Socket.io
+
+JWT & Bcrypt auth
+
+90% cross-browser compatibility
+
+Source: https://github.com/manya3219/Live-chat-Application
+
+(4) Portfolio Website (Current)
+
+Built using React + Tailwind
+
+Smooth animations
+
+Multi-page layout
+
+Source: https://manya3219.github.io/Manya_Portfolio/
+
+(5) Admin Dashboard Optimization Project
+
+(From internship at ThinkNEXT)
+
+Improved performance 30%
+
+Used React Router for efficient state handling
+
+Optimized workflows
+
+(6) RESTful API Backend System
+
+Secure API system built during internship
+
+Improved efficiency by 45%
+
+Node.js, Express.js, JWT
+
+6. EXPERIENCE SECTION
+
+Full-Stack Intern — ThinkNEXT Technologies (July–Aug 2024)
+
+Improved dashboard performance by 30%
+
+Collaborated in Agile team of 5
+
+Built secure RESTful APIs
+
+Reduced delivery time by 20%
+
+Use a timeline animation.
+
+7. EDUCATION SECTION
+
+B.Tech CSE — Kurukshetra University (2021–2025)
+CGPA: 7.8
+
+Add a subtle graduation-cap 3D animation.
+
+8. ACHIEVEMENTS SECTION
+
+Solved 300+ coding problems
+
+Gold Badge — HackerRank Problem Solving
+
+Participated in SIH, Kavach, Flipkart Grid 5.0
+
+Use animated counters.
+
+9. CONTACT SECTION
+
+Email: yadavmanya1902@gmail.com
+
+Phone: 9253615701
+
+LinkedIn: https://www.linkedin.com/in/manya-yadav01/
+
+GitHub: https://github.com/manya3219
+
+Add a glowing 3D contact form.
+
+10. TECH REQUIREMENTS
+
+Next.js (App Router)
+
+Tailwind CSS
+
+Framer Motion animations
+
+React-Three-Fiber or Spline for 3D
+
+Fully responsive
+
+SEO-optimized
+
+Dark mode toggle
+
+Smooth scroll
+
+Fast load animations
+
+11. OUTPUT FORMAT
+
+Generate:
+
+Folder structure
+
+Next.js pages
+
+Hero + Skills + Projects + About components
+
+3D sections
+
+Tailwind config
+
+Animations code
+
+Deployment-ready output
+
+12. TONE & STYLE
+
+Professional, futuristic, sleek, and animation-rich.
