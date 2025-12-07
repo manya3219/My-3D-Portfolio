@@ -44,7 +44,7 @@ export default function Hero() {
               Hire Me <ChevronRight className="ml-2 w-4 h-4" />
             </Button>
             
-            <a href="https://drive.google.com/file/d/1pMraDoCQ0ESUBExjMfOPtN85GgI8vQGS/view" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1m2xIVM9t9XCM4K58vSnImrGsOZzHIRO9/view?usp=sharing" target="_blank" rel="noopener noreferrer">
   <Button
     size="lg"
     variant="outline"
