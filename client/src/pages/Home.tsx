@@ -39,7 +39,7 @@ export default function Home() {
         
         <footer className="py-8 text-center border-t border-white/10 bg-black/50 backdrop-blur-sm">
           <p className="text-gray-500 font-rajdhani text-sm">
-            © 2024 Manya Yadav. Built with React, Tailwind & Three.js.
+            © 2025 Manya Yadav.
           </p>
         </footer>
       </div>

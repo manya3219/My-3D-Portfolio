@@ -9,8 +9,8 @@ const projects = [
     title: "NexaHub",
     description: "Collaborative learning platform with admin dashboard, moderation, and role-based access control.",
     tech: ["React", "Tailwind", "Node.js", "MongoDB"],
-    github: "https://github.com/manya3219/MyDev_FIleSharing",
-    link: "#",
+    github: "https://github.com/manya3219/frontend-notes",
+    link: "https://frontend-notes-2-ija5.onrender.com",
     type: "Ed-Tech Platform"
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     description: "Integrated Google Gemini API for streaming chat responses and real-time multimodal interface.",
     tech: ["React.js", "Gemini API", "CSS3"],
     github: "https://github.com/manya3219/Gemini-clone",
-    link: "#",
+    link: "https://my-gemini-clone-4jbg.vercel.app/",
     type: "AI Integration"
   },
   {
@@ -26,31 +26,31 @@ const projects = [
     description: "Real-time messaging application with Socket.io, JWT authentication, and cross-browser compatibility.",
     tech: ["Socket.io", "React", "Node.js", "JWT"],
     github: "https://github.com/manya3219/Live-chat-Application",
-    link: "#",
+    link: "https://chat-frontend-3j0y.onrender.com",
     type: "Real-time Communication"
   },
   {
-    title: "Portfolio Website",
-    description: "Modern 3D portfolio with smooth animations, multi-page layout and responsive design.",
-    tech: ["React", "Tailwind", "Framer Motion", "Three.js"],
-    github: "https://manya3219.github.io/Manya_Portfolio/",
-    link: "https://manya3219.github.io/Manya_Portfolio/",
-    type: "Personal Brand"
+    title: "Route Engines",
+    description: "Built to Move the Unmovable — RouteEngine Dynamics Inc delivers safe, reliable, and efficient heavy haul logistics across the India.",
+    tech: ["React", "Tailwind", "Next.js"],
+    github: "https://github.com/manya3219/RouteEngines",
+    link: "https://route-engines.vercel.app/",
+    type: "Freelance Project"
   },
   {
-    title: "Admin Dashboard",
+    title: "Blog WEBSITE + Admin Dashboard",
     description: "Performance optimization project improving load times by 30% using efficient state management.",
     tech: ["React", "React Router", "Recharts"],
-    github: "#",
-    link: "#",
+    github: "https://github.com/manya3219/mern-blog",
+    link: "https://github.com/manya3219/mern-blog",
     type: "Internship Project"
   },
   {
     title: "RESTful API System",
     description: "Secure API backend system built for efficiency and security with JWT authentication.",
     tech: ["Node.js", "Express", "JWT", "Bcrypt"],
-    github: "#",
-    link: "#",
+    github: "https://github.com/manya3219/MultiFactorAuthentication",
+    link: "https://github.com/manya3219/MultiFactorAuthentication",
     type: "Backend Architecture"
   }
 ];

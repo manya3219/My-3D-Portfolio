@@ -12,22 +12,22 @@ const skillCategories = [
   {
     title: "Programming Languages",
     icon: <Code2 className="w-6 h-6 text-primary" />,
-    skills: ["C++", "JavaScript", "TypeScript", "HTML5", "CSS3"]
+    skills: ["C++", "JavaScript", "HTML5", "CSS3"]
   },
   {
     title: "Frameworks & Libraries",
     icon: <Layers className="w-6 h-6 text-secondary" />,
-    skills: ["React.js", "Next.js", "Node.js", "Express.js", "Tailwind CSS", "Three.js", "Framer Motion"]
+    skills: ["React.js", "Next.js", "Node.js", "Express.js", "Tailwind CSS", ]
   },
   {
     title: "Databases",
     icon: <Database className="w-6 h-6 text-accent" />,
-    skills: ["MongoDB", "SQL", "PostgreSQL"]
+    skills: ["MongoDB", "SQL", "Firebase"]
   },
   {
     title: "Tools & DevOps",
     icon: <Terminal className="w-6 h-6 text-primary" />,
-    skills: ["Git", "GitHub", "Postman", "VS Code", "Vercel", "Linux"]
+    skills: ["Git", "GitHub", "Postman", "VS Code", "Vercel", "Render"]
   }
 ];
 

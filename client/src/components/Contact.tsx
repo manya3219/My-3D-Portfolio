@@ -99,60 +99,12 @@ export default function Contact() {
           {/* Contact Form */}
           <div className="bg-card/30 backdrop-blur-md border border-white/10 p-8 rounded-2xl relative overflow-hidden">
              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 blur-[60px] rounded-full -mr-16 -mt-16 pointer-events-none" />
+             <p>🚀 As a 2025 B.Tech CSE graduate, I’ve spent the last few years working on personal and academic projects that helped me understand how modern web applications are built—from creating responsive interfaces using HTML, CSS, JavaScript, and React.js to developing backend functionality with Node.js and MongoDB. My journey across the MERN stack, along with strong problem-solving skills in C++, has shaped me into a developer who enjoys creating meaningful, user-focused solutions.
+
+I’m always excited to connect with people, explore new opportunities, and contribute to teams where I can apply my technical skills while continuing to learn and grow. Whether it’s collaborating on innovative ideas, taking on challenging tasks, or turning concepts into fully functional applications, I bring dedication, curiosity, and a strong commitment to delivering quality work.
+
+If you feel my passion and energy align with the kind of work you’re doing, I’d love to hear from you. Let’s connect, share ideas, and build something impactful together — I’m always open to new possibilities and meaningful collaborations. ✨</p>
              
-             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 relative z-10">
-                <FormField
-                  control={form.control}
-                  name="name"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-white font-rajdhani">Name</FormLabel>
-                      <FormControl>
-                        <Input placeholder="John Doe" {...field} className="bg-black/50 border-white/10 focus:border-primary text-white font-rajdhani h-12" />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-white font-rajdhani">Email</FormLabel>
-                      <FormControl>
-                        <Input placeholder="john@example.com" {...field} className="bg-black/50 border-white/10 focus:border-primary text-white font-rajdhani h-12" />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                
-                <FormField
-                  control={form.control}
-                  name="message"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-white font-rajdhani">Message</FormLabel>
-                      <FormControl>
-                        <Textarea 
-                          placeholder="Tell me about your project..." 
-                          {...field} 
-                          className="bg-black/50 border-white/10 focus:border-primary text-white font-rajdhani min-h-[120px]" 
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                
-                <Button type="submit" className="w-full bg-gradient-to-r from-primary to-secondary text-white font-orbitron font-bold h-12 hover:opacity-90 transition-opacity">
-                  Send Message <Send className="ml-2 w-4 h-4" />
-                </Button>
-              </form>
-            </Form>
           </div>
         </motion.div>
       </div>

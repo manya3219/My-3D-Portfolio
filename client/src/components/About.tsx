@@ -59,7 +59,8 @@ export default function About() {
               </p>
               
               <p>
-                Currently pursuing my B.Tech in CSE at Kurukshetra University, I combine academic foundation with hands-on project experience to deliver high-quality software solutions.
+                As a recent B.Tech CSE graduate skilled in React, Node.js, Express, and MongoDB. I’ve built full-stack projects like an E-Learning App and a Live Chat App, and I have hands-on experience with REST APIs and JWT/OAuth. I’ve also solved 300+ DSA problems on LeetCode and GFG, which has strengthened my problem-solving abilities.
+
               </p>
             </div>
           </div>

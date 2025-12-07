@@ -35,7 +35,7 @@ export default function Hero() {
                animate={{ width: "100%" }}
                transition={{ duration: 3, ease: "linear" }}
              >
-               Building fast, scalable, and immersive digital experiences.
+               Building fast, scalable, and Responsive Design.
              </motion.p>
           </div>
           
@@ -44,9 +44,15 @@ export default function Hero() {
               Hire Me <ChevronRight className="ml-2 w-4 h-4" />
             </Button>
             
-            <Button size="lg" variant="outline" className="border-primary/50 text-primary hover:bg-primary/10 hover:text-primary font-orbitron font-bold backdrop-blur-sm">
-              Download Resume <Download className="ml-2 w-4 h-4" />
-            </Button>
+            <a href="https://drive.google.com/file/d/1pMraDoCQ0ESUBExjMfOPtN85GgI8vQGS/view" target="_blank" rel="noopener noreferrer">
+  <Button
+    size="lg"
+    variant="outline"
+    className="border-primary/50 text-primary hover:bg-primary/10 hover:text-primary font-orbitron font-bold backdrop-blur-sm"
+  >
+    Download Resume <Download className="ml-2 w-4 h-4" />
+  </Button>
+</a>
           </div>
           
           <div className="mt-12 flex items-center gap-6 text-gray-400 font-rajdhani">
@@ -61,8 +67,8 @@ export default function Hero() {
             </div>
             <div className="w-px h-10 bg-gray-700"></div>
             <div className="flex flex-col">
-              <span className="text-3xl font-bold text-white">3.9+</span>
-              <span className="text-sm">Years Coding</span>
+              <span className="text-3xl font-bold text-white">Fresher</span>
+              <span className="text-sm">Experience</span>
             </div>
           </div>
         </motion.div>
@@ -93,7 +99,7 @@ export default function Hero() {
             
             {/* Decorative Tech Elements */}
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 px-4 py-1 bg-black border border-primary text-primary text-xs font-mono rounded-full">
-              SYSTEM_ONLINE
+              
             </div>
             <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 px-4 py-1 bg-black border border-secondary text-secondary text-xs font-mono rounded-full">
               DEV_MODE
