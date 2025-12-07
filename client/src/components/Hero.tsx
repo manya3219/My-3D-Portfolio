@@ -1,43 +1,7 @@
 import { motion } from "framer-motion";
-import { Canvas } from "@react-three/fiber";
-import { MeshDistortMaterial, Sphere, Float, TorusKnot } from "@react-three/drei";
 import { Button } from "@/components/ui/button";
 import { Download, ChevronRight } from "lucide-react";
-import { ThreeErrorBoundary } from "./ThreeErrorBoundary";
-
-function HeroScene() {
-  return (
-    <Canvas>
-      <ambientLight intensity={0.5} />
-      <directionalLight position={[2, 5, 2]} intensity={1} color="#00f3ff" />
-      <directionalLight position={[-2, -5, -2]} intensity={1} color="#bc13fe" />
-      
-      <Float speed={4} rotationIntensity={1} floatIntensity={2}>
-        <TorusKnot args={[1, 0.3, 128, 16]} position={[0, 0, 0]} rotation={[0, 0, 0]}>
-          <meshStandardMaterial
-            color="#000000"
-            emissive="#00f3ff"
-            emissiveIntensity={0.5}
-            roughness={0.1}
-            metalness={1}
-            wireframe
-          />
-        </TorusKnot>
-      </Float>
-      
-      <Float speed={2} rotationIntensity={2} floatIntensity={1}>
-        <Sphere args={[0.5, 32, 32]} position={[2, 1, -1]}>
-          <MeshDistortMaterial
-            color="#bc13fe"
-            speed={2}
-            distort={0.4}
-            radius={1}
-          />
-        </Sphere>
-      </Float>
-    </Canvas>
-  );
-}
+import profilePic from "@assets/formal_picture_1765101552315.jpg";
 
 export default function Hero() {
   return (
@@ -107,12 +71,34 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="h-[400px] md:h-[600px] w-full relative z-0"
+          className="relative z-0 flex justify-center items-center"
         >
+          {/* Glowing Background Effect */}
           <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-full blur-[100px] opacity-30 animate-pulse" />
-          <ThreeErrorBoundary>
-             <HeroScene />
-          </ThreeErrorBoundary>
+          
+          {/* Hexagonal Frame Container */}
+          <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] group">
+            {/* Spinning Rings */}
+            <div className="absolute inset-0 rounded-full border border-primary/30 border-dashed animate-[spin_10s_linear_infinite]" />
+            <div className="absolute inset-4 rounded-full border border-secondary/30 border-dashed animate-[spin_15s_linear_infinite_reverse]" />
+            
+            {/* Image Container */}
+            <div className="absolute inset-8 rounded-full overflow-hidden border-2 border-primary/50 box-glow bg-black/50 backdrop-blur-sm">
+              <img 
+                src={profilePic} 
+                alt="Manya Yadav" 
+                className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+              />
+            </div>
+            
+            {/* Decorative Tech Elements */}
+            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 px-4 py-1 bg-black border border-primary text-primary text-xs font-mono rounded-full">
+              SYSTEM_ONLINE
+            </div>
+            <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 px-4 py-1 bg-black border border-secondary text-secondary text-xs font-mono rounded-full">
+              DEV_MODE
+            </div>
+          </div>
         </motion.div>
       </div>
       
