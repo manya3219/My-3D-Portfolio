@@ -6,6 +6,14 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
+    title: "MediPayTrack System",
+    description: "Full-stack Medical Shop Management System with prescription tracking, billing, and financial dashboard for revenue, deposits, and balance management.",
+    tech: ["React", "Node.js", "Express", "PostgreSQL", "REST API"],
+    github: "https://medipay-frontend.onrender.com/",
+    link: "https://medipay-frontend.onrender.com/",
+    type: "Freelance Project"
+  },
+  {
     title: "NexaHub",
     description: "Collaborative learning platform with admin dashboard, moderation, and role-based access control.",
     tech: ["React", "Tailwind", "Node.js", "MongoDB"],

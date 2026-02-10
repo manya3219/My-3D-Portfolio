@@ -25,7 +25,7 @@ export default function Hero() {
           </h1>
           
           <h2 className="text-2xl md:text-3xl text-gray-400 font-rajdhani mb-6">
-            Software Engineer & Full-Stack Developer
+            Software Engineer & Full-Stack Developer | Freelancer
           </h2>
           
           <div className="h-16 mb-8">
@@ -44,7 +44,7 @@ export default function Hero() {
               Hire Me <ChevronRight className="ml-2 w-4 h-4" />
             </Button>
             
-            <a href="https://drive.google.com/file/d/1m2xIVM9t9XCM4K58vSnImrGsOZzHIRO9/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1gorzbsQ33hi-Zn6PT7DRJLyegVHxz1yj/view?usp=sharing" target="_blank" rel="noopener noreferrer">
   <Button
     size="lg"
     variant="outline"

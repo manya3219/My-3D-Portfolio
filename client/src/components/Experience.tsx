@@ -33,6 +33,23 @@ export default function Experience() {
                 className="relative"
               >
                 <div className="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-primary box-glow border-4 border-black" />
+                <h4 className="text-xl font-orbitron font-bold text-white">Full Stack Developer (Freelance)</h4>
+                <p className="text-primary font-rajdhani font-semibold">Independent Client – MediPayTrack System</p>
+                <p className="text-sm text-gray-500 font-mono mb-4">Jan 2026 – Present</p>
+                <ul className="list-disc list-inside text-gray-400 font-rajdhani space-y-2">
+                  <li>Built a full-stack Medical Shop Management System to replace manual prescription and billing tracking with centralized digital records.</li>
+                  <li>Developed React UI and Node.js/Express REST APIs with PostgreSQL to manage prescription uploads, searchable records, and real-time tracking of revenue, deposits, and balances.</li>
+                  <li>Implemented a monthly financial dashboard with profit/loss, deposit totals, outstanding balance reports, and transaction history.</li>
+                </ul>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="relative"
+              >
+                <div className="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-primary box-glow border-4 border-black" />
                 <h4 className="text-xl font-orbitron font-bold text-white">Full-Stack Intern</h4>
                 <p className="text-primary font-rajdhani font-semibold">ThinkNEXT Technologies</p>
                 <p className="text-sm text-gray-500 font-mono mb-4">July 2024 – Aug 2024</p>
