@@ -6,56 +6,88 @@ import profilePic from "@assets/formal_picture_1765101552315.jpg";
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent via-background/40 to-background/95" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
+          initial={{ opacity: 0, y: 70, scale: 0.92, filter: "blur(16px)" }}
+          animate={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
+          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           className="z-10"
         >
-          <div className="inline-block px-4 py-1 mb-4 rounded-full border border-primary/30 bg-primary/10 backdrop-blur-sm">
+          <motion.div
+            initial={{ opacity: 0, y: 18 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.12, duration: 0.55, ease: "easeOut" }}
+            whileHover={{ y: -2, scale: 1.03 }}
+            className="inline-block mb-4 rounded-full border border-primary/30 bg-primary/10 px-4 py-1 backdrop-blur-sm"
+          >
             <span className="text-primary font-rajdhani font-semibold tracking-wider text-sm uppercase">
               Available for work
             </span>
-          </div>
+          </motion.div>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 font-orbitron leading-tight">
+          <motion.h1
+            initial={{ opacity: 0, y: 26 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.22, duration: 0.7, ease: "easeOut" }}
+            className="text-5xl md:text-7xl font-bold mb-4 font-orbitron leading-tight"
+          >
             <span className="text-white">Manya</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-glow">Yadav</span>
-          </h1>
+          </motion.h1>
           
-          <h2 className="text-2xl md:text-3xl text-gray-400 font-rajdhani mb-6">
+          <motion.h2
+            initial={{ opacity: 0, y: 28 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.34, duration: 0.72, ease: "easeOut" }}
+            className="text-2xl md:text-3xl text-gray-400 font-rajdhani mb-6"
+          >
             Software Engineer & Full-Stack Developer | Freelancer
-          </h2>
+          </motion.h2>
           
-          <div className="h-16 mb-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.46, duration: 0.75, ease: "easeOut" }}
+            className="h-16 mb-8"
+          >
              <motion.p 
                className="text-lg md:text-xl text-primary font-mono border-r-2 border-primary pr-2 inline-block overflow-hidden whitespace-nowrap"
                initial={{ width: 0 }}
                animate={{ width: "100%" }}
-               transition={{ duration: 3, ease: "linear" }}
+               transition={{ delay: 0.82, duration: 2.8, ease: "linear" }}
              >
                Building fast, scalable, and Responsive Design.
              </motion.p>
-          </div>
+          </motion.div>
           
-          <div className="flex flex-wrap gap-4">
-            <Button size="lg" className="bg-primary text-black hover:bg-primary/80 font-orbitron font-bold border-none" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth'})}>
+          <motion.div
+            initial={{ opacity: 0, y: 34 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.58, duration: 0.72, ease: "easeOut" }}
+            className="flex flex-wrap gap-4"
+          >
+            <Button size="lg" className="bg-primary text-black hover:bg-primary/80 font-orbitron font-bold border-none transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_14px_35px_rgba(34,211,238,0.35)]" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth'})}>
               Hire Me <ChevronRight className="ml-2 w-4 h-4" />
             </Button>
             
-            <a href="https://drive.google.com/file/d/1gorzbsQ33hi-Zn6PT7DRJLyegVHxz1yj/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1c7Czym6bATtp4uEelV0MFncVwPpjcQkB/view?usp=sharing" target="_blank" rel="noopener noreferrer">
   <Button
     size="lg"
     variant="outline"
-    className="border-primary/50 text-primary hover:bg-primary/10 hover:text-primary font-orbitron font-bold backdrop-blur-sm"
+    className="border-primary/50 text-primary hover:bg-primary/10 hover:text-primary font-orbitron font-bold backdrop-blur-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_14px_35px_rgba(34,211,238,0.2)]"
   >
     Download Resume <Download className="ml-2 w-4 h-4" />
   </Button>
 </a>
-          </div>
+          </motion.div>
           
-          <div className="mt-12 flex items-center gap-6 text-gray-400 font-rajdhani">
+          <motion.div
+            initial={{ opacity: 0, y: 38 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7, duration: 0.75, ease: "easeOut" }}
+            className="mt-12 flex items-center gap-6 text-gray-400 font-rajdhani"
+          >
             <div className="flex flex-col">
               <span className="text-3xl font-bold text-white">300+</span>
               <span className="text-sm">Problems Solved</span>
@@ -70,13 +102,14 @@ export default function Hero() {
               <span className="text-3xl font-bold text-white">Fresher</span>
               <span className="text-sm">Experience</span>
             </div>
-          </div>
+          </motion.div>
         </motion.div>
         
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.2 }}
+          initial={{ opacity: 0, scale: 0.78, y: 40, filter: "blur(18px)" }}
+          animate={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
+          transition={{ duration: 1.05, delay: 0.22, ease: [0.22, 1, 0.36, 1] }}
+          whileHover={{ y: -6, scale: 1.015 }}
           className="relative z-0 flex justify-center items-center"
         >
           {/* Glowing Background Effect */}

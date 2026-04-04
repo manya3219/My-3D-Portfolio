@@ -6,6 +6,14 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
+    title: "Car Racing ",
+    description: "A sleek motorsport experience featuring motion-driven storytelling and high-performance UI.",
+    tech: ["React", "Framer Motion", "UI/UX Design"],
+    github: "https://github.com/manya3219/racer",
+    link: "https://racer-lovat.vercel.app/",
+    type: "Freelance Project"
+  },
+  {
     title: "MediPayTrack System",
     description: "Full-stack Medical Shop Management System with prescription tracking, billing, and financial dashboard for revenue, deposits, and balance management.",
     tech: ["React", "Node.js", "Express", "PostgreSQL", "REST API"],
@@ -68,10 +76,10 @@ export default function Projects() {
     <section id="projects" className="py-24 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 0, y: 40, scale: 0.96, filter: "blur(10px)" }}
+          whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.35 }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-orbitron font-bold text-white mb-4">
@@ -86,14 +94,14 @@ export default function Projects() {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -10, rotateX: 5, rotateY: 5 }}
+              initial={{ opacity: 0, y: 70, scale: 0.82, filter: "blur(14px)" }}
+              whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
+              transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.25 }}
+              whileHover={{ y: -12, scale: 1.03 }}
               className="perspective-1000"
             >
-              <Card className="bg-card/40 border-primary/20 backdrop-blur-sm h-full flex flex-col hover:border-primary/60 transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,243,255,0.2)]">
+              <Card className="bg-card/40 border-primary/20 backdrop-blur-sm h-full flex flex-col hover:border-primary/60 transition-all duration-300 hover:shadow-[0_18px_40px_rgba(34,211,238,0.2)]">
                 <CardHeader>
                   <div className="flex justify-between items-start mb-2">
                     <Folder className="w-8 h-8 text-primary" />

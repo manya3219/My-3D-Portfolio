@@ -22,12 +22,12 @@ const skillCategories = [
   {
     title: "Databases",
     icon: <Database className="w-6 h-6 text-accent" />,
-    skills: ["MongoDB", "SQL", "Firebase"]
+    skills: ["MongoDB", "SQL", "Firebase","PostgresSQL"]
   },
   {
-    title: "Tools & DevOps",
+    title: "AI Tools & Platforms",
     icon: <Terminal className="w-6 h-6 text-primary" />,
-    skills: ["Git", "GitHub", "Postman", "VS Code", "Vercel", "Render"]
+    skills: ["Cursor.AI","ChatGPT","Sanity","Git", "GitHub", "Postman", "VS Code", "Vercel", "Render"]
   }
 ];
 
@@ -36,10 +36,10 @@ export default function Skills() {
     <section id="skills" className="py-24 relative bg-black/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 0, y: 40, scale: 0.96, filter: "blur(10px)" }}
+          whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.35 }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-orbitron font-bold text-white mb-4">
@@ -54,12 +54,12 @@ export default function Skills() {
           {skillCategories.map((category, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -10 }}
-              className="bg-card/30 backdrop-blur-md border border-white/5 p-6 rounded-xl hover:border-primary/50 transition-colors group relative overflow-hidden"
+              initial={{ opacity: 0, y: 70, scale: 0.82, filter: "blur(14px)" }}
+              whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
+              transition={{ duration: 0.6, delay: index * 0.12, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.25 }}
+              whileHover={{ y: -12, scale: 1.03 }}
+              className="bg-card/30 backdrop-blur-md border border-white/5 p-6 rounded-xl hover:border-primary/50 transition-all duration-300 group relative overflow-hidden hover:shadow-[0_18px_40px_rgba(34,211,238,0.18)]"
             >
               <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               
