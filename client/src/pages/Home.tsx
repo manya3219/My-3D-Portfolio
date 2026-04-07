@@ -6,7 +6,6 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
-import AmbientMelody from "@/components/AmbientMelody";
 import generatedImage from '@assets/generated_images/dark_futuristic_hexagonal_grid_texture.png';
 
 export default function Home() {
@@ -28,7 +27,6 @@ export default function Home() {
       
       {/* Content Layer */}
       <div className="relative z-10">
-        <AmbientMelody />
         <Navbar />
         <main>
           <Hero />
