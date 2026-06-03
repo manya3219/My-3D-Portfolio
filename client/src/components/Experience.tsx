@@ -5,7 +5,7 @@ const experienceItems = [
   {
     title: "Full-Stack Developer Intern",
     company: "Solution Bowl",
-    period: "Feb 2026 - Present",
+    period: "March 2026 - Present",
     points: [
       "Contributing to the development of a scalable gaming platform using React.js and TypeScript, designing modular and reusable UI components for improved maintainability.",
       "Implementing dynamic and responsive user interfaces with efficient state management to enhance user experience and platform performance.",
@@ -27,7 +27,7 @@ const experienceItems = [
   {
     title: "Full-Stack Intern",
     company: "ThinkNEXT Technologies",
-    period: "July 2024 - Aug 2024",
+    period: "Step 2025 - Feb 2026",
     points: [
       "Improved dashboard performance by 30% through optimized rendering.",
       "Collaborated in an Agile team of 5 developers.",
