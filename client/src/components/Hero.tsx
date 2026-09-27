@@ -110,7 +110,7 @@ export default function Hero() {
 
             <MagneticButton strength={0.3}>
               <a
-                href="https://drive.google.com/file/d/11I_7Jm5HbOET4DjcNL9Tc2LqNlBkIeI4/view"
+                href="https://drive.google.com/file/d/1xrj7LPCiYKINLElUxFB8pIiEYyYko6yj/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
