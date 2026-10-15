@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { Download, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import MagneticButton from "@/components/MagneticButton";
@@ -6,7 +6,40 @@ import AnimatedText from "@/components/AnimatedText";
 import TextScramble from "@/components/TextScramble";
 import profilePic from "@assets/formal_picture_1765101552315.jpg";
 
+const techOrbits = [
+  {
+    inset: 20, duration: 46, direction: 1, offset: -90,
+    borderColor: "rgba(34, 211, 238, 0.24)",
+    technologies: [
+      { name: "React", icon: "react/react-original.svg", monochrome: false },
+      { name: "Next.js", icon: "nextjs/nextjs-original.svg", monochrome: true },
+      { name: "Tailwind CSS", icon: "tailwindcss/tailwindcss-original.svg", monochrome: false },
+    ],
+  },
+  {
+    inset: 11, duration: 58, direction: -1, offset: -45,
+    borderColor: "rgba(168, 85, 247, 0.22)",
+    technologies: [
+      { name: "Node.js", icon: "nodejs/nodejs-original.svg", monochrome: false },
+      { name: "Express", icon: "express/express-original.svg", monochrome: true },
+      { name: "MongoDB", icon: "mongodb/mongodb-original.svg", monochrome: false },
+      { name: "MySQL", icon: "mysql/mysql-original.svg", monochrome: false },
+    ],
+  },
+  {
+    inset: 2, duration: 72, direction: 1, offset: -120,
+    borderColor: "rgba(34, 211, 238, 0.16)",
+    technologies: [
+      { name: "JavaScript", icon: "javascript/javascript-original.svg", monochrome: false },
+      { name: "HTML5", icon: "html5/html5-original.svg", monochrome: false },
+      { name: "CSS3", icon: "css3/css3-original.svg", monochrome: false },
+    ],
+  },
+];
+
 export default function Hero() {
+  const reduceMotion = useReducedMotion();
+
   return (
     <section
       className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden"
@@ -134,8 +167,8 @@ export default function Hero() {
           >
             {[
               { value: "300+", label: "Problems Solved" },
-              { value: "15+", label: "Projects Built" },
-              { value: "Fresher", label: "Experience" },
+              { value: "10+", label: "Projects Built" },
+              { value: "1", label: "Experience" },
             ].map((stat, i) => (
               <div key={i} className="flex items-center gap-6">
                 {i > 0 && <div className="w-px h-10 bg-gray-700" />}
@@ -164,49 +197,71 @@ export default function Hero() {
           {/* Ambient glow */}
           <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-full blur-[100px] opacity-30 animate-pulse" />
 
-          <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] group">
-            {/* Spinning rings */}
-            <div className="absolute inset-0 rounded-full border border-primary/30 border-dashed animate-[spin_10s_linear_infinite]" />
-            <div className="absolute inset-4 rounded-full border border-secondary/30 border-dashed animate-[spin_15s_linear_infinite_reverse]" />
+          <div className="relative isolate aspect-square w-full max-w-[520px] my-8 group">
+            <div aria-hidden="true" className="pointer-events-none absolute inset-[25%] rounded-full bg-primary/10 blur-2xl" />
+
+            {/* Ring spacing exceeds badge width, keeping all three orbits clear. */}
+            {techOrbits.map((orbit) => (
+              <motion.div
+                key={orbit.inset}
+                className="absolute z-20 rounded-full border"
+                style={{ inset: `${orbit.inset}%`, borderColor: orbit.borderColor }}
+                initial={{ rotate: 0 }}
+                animate={{ rotate: reduceMotion ? 0 : orbit.direction * 360 }}
+                transition={{ repeat: Infinity, duration: orbit.duration, ease: "linear" }}
+              >
+                {orbit.technologies.map((tech, index) => {
+                  const angle = (index / orbit.technologies.length) * Math.PI * 2
+                    + orbit.offset * Math.PI / 180;
+
+                  return (
+                    <div
+                      key={tech.name}
+                      className="absolute aspect-square -translate-x-1/2 -translate-y-1/2"
+                      style={{
+                        // Keep badges at 8% of the full illustration on every ring.
+                        width: `${800 / (100 - orbit.inset * 2)}%`,
+                        left: `${50 + Math.cos(angle) * 50}%`,
+                        top: `${50 + Math.sin(angle) * 50}%`,
+                      }}
+                    >
+                      <motion.div
+                        className="h-full w-full"
+                        initial={{ rotate: 0 }}
+                        animate={{ rotate: reduceMotion ? 0 : -orbit.direction * 360 }}
+                        transition={{ repeat: Infinity, duration: orbit.duration, ease: "linear" }}
+                      >
+                        <div
+                          title={tech.name}
+                          className="flex h-full w-full items-center justify-center rounded-full border border-white/15 bg-[#0c1322] shadow-[0_4px_14px_rgba(0,0,0,0.35),inset_0_1px_0_rgba(255,255,255,0.06)] transition-[border-color,box-shadow] duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)]"
+                        >
+                          <img
+                            src={`https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/${tech.icon}`}
+                            alt={tech.name}
+                            width={24}
+                            height={24}
+                            draggable={false}
+                            className={`h-[56%] w-[56%] object-contain ${tech.monochrome ? "brightness-0 invert" : ""}`}
+                          />
+                        </div>
+                      </motion.div>
+                    </div>
+                  );
+                })}
+              </motion.div>
+            ))}
 
             {/* Image */}
-            <div className="absolute inset-8 rounded-full overflow-hidden border-2 border-primary/50 box-glow bg-black/50 backdrop-blur-sm">
+            <div className="absolute inset-[26%] z-10 rounded-full overflow-hidden border border-primary/40 bg-slate-950 shadow-[0_0_35px_rgba(34,211,238,0.12)]">
               <img
                 src={profilePic}
                 alt="Manya Yadav"
-                className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
               />
               {/* Hover sheen */}
               <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
 
-            {/* Tech labels */}
-            <motion.div
-              className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-black border border-primary text-primary text-xs font-mono rounded-full"
-              animate={{ y: [0, -4, 0] }}
-              transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-            >
-              &lt;dev /&gt;
-            </motion.div>
-            <motion.div
-              className="absolute -bottom-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-black border border-secondary text-secondary text-xs font-mono rounded-full"
-              animate={{ y: [0, 4, 0] }}
-              transition={{ repeat: Infinity, duration: 3.5, ease: "easeInOut", delay: 0.5 }}
-            >
-              DEV_MODE
-            </motion.div>
-
-            {/* Orbiting dot */}
-            <motion.div
-              className="absolute inset-0"
-              animate={{ rotate: 360 }}
-              transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
-            >
-              <div
-                className="absolute w-3 h-3 rounded-full bg-primary shadow-[0_0_10px_rgba(34,211,238,0.8)]"
-                style={{ top: "4px", left: "50%", transform: "translateX(-50%)" }}
-              />
-            </motion.div>
           </div>
         </motion.div>
       </div>

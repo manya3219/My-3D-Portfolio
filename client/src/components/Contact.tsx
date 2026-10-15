@@ -188,18 +188,13 @@ export default function Contact() {
             <div className="pointer-events-none absolute -left-16 -bottom-16 h-40 w-40 rounded-full bg-secondary/10 blur-[60px] opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 
             <p className="font-rajdhani leading-8 text-gray-300 relative z-10">
-              As a 2025 B.Tech CSE graduate, I've spent the last few years working on personal and
-              academic projects that helped me understand how modern web applications are built, from
-              creating responsive interfaces with HTML, CSS, JavaScript, and React.js to developing
-              backend functionality with Node.js and MongoDB.
+              I’m a Full Stack Developer at Solution Bowl and a 2025 B.Tech CSE graduate, building production web applications with React.js, TypeScript, and REST APIs. My work includes reusable components, responsive interfaces, real-time data handling, and analytics features that help teams understand user activity.
             </p>
             <p className="mt-6 font-rajdhani leading-8 text-gray-300 relative z-10">
-              I'm always excited to connect with people, explore new opportunities, and contribute to
-              teams where I can apply my technical skills while continuing to learn and grow.
+              Beyond my professional experience, I’ve built a medical shop management system and a real-time chat application using Node.js, Express.js, MongoDB, and Socket.io. Solving 300+ coding problems has strengthened my problem-solving skills, while code reviews and collaborative development continue to shape how I build maintainable software.
             </p>
             <p className="mt-6 font-rajdhani leading-8 text-gray-300 relative z-10">
-              If you feel my passion and energy align with the kind of work you're doing, I'd love to
-              hear from you. Let's connect, share ideas, and build something impactful together.
+              I’m keen to connect with teams where I can contribute to meaningful products, take ownership of challenges, and grow as an engineer. Let’s connect and build something useful.
             </p>
 
             {/* Decorative corner bracket */}

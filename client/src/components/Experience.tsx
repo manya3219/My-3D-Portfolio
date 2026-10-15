@@ -3,7 +3,7 @@ import { Award, Briefcase, GraduationCap } from "lucide-react";
 
 const experienceItems = [
   {
-    title: "Full-Stack Developer Intern",
+    title: "Full-Stack Developer ",
     company: "Solution Bowl",
     period: "March 2026 - Present",
     points: [
@@ -185,7 +185,7 @@ export default function Experience() {
                   <h4 className="text-xl font-orbitron font-bold text-white">B.Tech Computer Science</h4>
                   <p className="font-rajdhani font-semibold text-secondary">Kurukshetra University</p>
                   <p className="mb-2 text-sm font-mono text-gray-500">2021 - 2025</p>
-                  <p className="font-rajdhani text-gray-400">CGPA: 7.8</p>
+                  <p className="font-rajdhani text-gray-400">CGPA: 8</p>
                 </motion.div>
               </div>
             </motion.div>
